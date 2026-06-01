@@ -1,0 +1,146 @@
+:root {
+    color-scheme: dark;
+    color: #222;
+    background: #f4f6f8;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #eef2f7;
+}
+
+.page-container {
+    width: min(980px, calc(100% - 2rem));
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 2.5vw, 2.6rem);
+}
+
+.panel {
+    padding: 1rem 1.25rem;
+    border-radius: 14px;
+    margin-bottom: 1.5rem;
+}
+
+.panel-info {
+    background: #eef4ff;
+    border: 1px solid #c5d8ff;
+    color: #1d3f8b;
+}
+
+.panel-success {
+    background: #e6f7ec;
+    border: 1px solid #9ddbb6;
+    color: #1f5e37;
+}
+
+.panel-error {
+    background: #ffe8e8;
+    border: 1px solid #f1b2b2;
+    color: #8b2d2d;
+}
+
+.form-card,
+.status-card,
+.table-card {
+    padding: 1.25rem;
+    border-radius: 14px;
+    background: #f8fbff;
+    border: 1px solid #d8e3ee;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.4rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-primary {
+    background: #1747b8;
+    color: #ffffff;
+}
+
+.button-secondary {
+    background: #ffffff;
+    color: #1f3a5d;
+    border: 1px solid #d0d7e5;
+}
+
+.qr-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.qr-code {
+    width: 320px;
+    height: 320px;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #d9dde4;
+}
+
+.qr-fallback {
+    max-width: 500px;
+    word-break: break-word;
+}
+
+.spinner {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #1747b8;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 0.75rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    padding: 0.8rem 0.75rem;
+    background: #f3f7fb;
+    border-bottom: 1px solid #d8e3ee;
+}
+
+tbody td {
+    padding: 0.8rem 0.75rem;
+    border-bottom: 1px solid #eef1f5;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-start;
+}
